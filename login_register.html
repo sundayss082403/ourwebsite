@@ -13,7 +13,7 @@
  <div class="wrapper">
     <nav class="nav">
         <div class="logo">
-            <i class="ri-graduation-cap-fill"></i>
+            <i class="ri-school-fill"></i>
             <span>EVSU</span>
         </div>
         <div class="nav-button">
@@ -22,11 +22,8 @@
         </div>
     </nav>
 
-<!----------------------------- Form box ----------------------------------->    
+<!----------------------------- Login Form ----------------------------------->    
     <div class="form-box">
-        
-        <!------------------- login form -------------------------->
-
         <div class="login-container" id="login">
             <div class="top">
                 <span>Don't have an account? <a href="#" onclick="register()">Register</a></span>
@@ -56,7 +53,7 @@
             </div>
         </div>
 
-        <!------------------- registration form -------------------------->
+ <!----------------------------- Registration Form ----------------------------------->
         <div class="register-container" id="register">
             <div class="top">
                 <span>Have an account? <a href="#" onclick="login()">Login</a></span>
@@ -99,46 +96,7 @@
 </div>   
 
 
-<script>
-   
-   function myMenuFunction() {
-    var i = document.getElementById("navMenu");
-
-    if(i.className === "nav-menu") {
-        i.className += " responsive";
-    } else {
-        i.className = "nav-menu";
-    }
-   }
- 
-</script>
-
-<script>
-
-    var a = document.getElementById("loginBtn");
-    var b = document.getElementById("registerBtn");
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
-
-    function login() {
-        x.style.left = "4px";
-        y.style.right = "-520px";
-        a.className += " white-btn";
-        b.className = "btn";
-        x.style.opacity = 1;
-        y.style.opacity = 0;
-    }
-
-    function register() {
-        x.style.left = "-510px";
-        y.style.right = "5px";
-        a.className = "btn";
-        b.className += " white-btn";
-        x.style.opacity = 0;
-        y.style.opacity = 1;
-    }
-
-</script>
+<script src="script_login.js"></script>
 
 </body>
 </html>
